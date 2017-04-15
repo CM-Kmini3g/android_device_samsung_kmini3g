@@ -71,5 +71,13 @@ PRODUCT_PACKAGES += \
     fingerprint.msm8226 \
     ValidityService
 
+# For userdebug builds
+ADDITIONAL_DEFAULT_PROPERTIES += \
+ ro.secure=0 \
+ ro.adb.secure=0 \
+ ro.debuggable=1 \
+ persist.service.adb.enable=1 \
+ security.perf_harden=0
+
 # Inherit from qcom-common
 $(call inherit-product, device/samsung/msm8226-common/msm8226.mk)
