@@ -71,6 +71,10 @@ PRODUCT_PACKAGES += \
     fingerprint.msm8226 \
     ValidityService
 
+# CMActions
+PRODUCT_PACKAGES += \
+    CMActions
+
 # For userdebug builds
 ADDITIONAL_DEFAULT_PROPERTIES += \
  ro.secure=0 \
