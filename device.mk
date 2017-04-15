@@ -75,6 +75,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     CMActions
 
+# FlipFlap
+PRODUCT_PACKAGES += \
+    FlipFlap
+
 # For userdebug builds
 ADDITIONAL_DEFAULT_PROPERTIES += \
  ro.secure=0 \
