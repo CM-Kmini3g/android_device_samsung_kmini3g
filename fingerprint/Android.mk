@@ -21,8 +21,19 @@ include $(CLEAR_VARS)
 
 LOCAL_MODULE := fingerprint.msm8226
 LOCAL_MODULE_PATH := $(TARGET_OUT_SHARED_LIBRARIES)/hw
-LOCAL_SRC_FILES := fingerprint.c
-LOCAL_SHARED_LIBRARIES := liblog
+LOCAL_SRC_FILES := \
+    fingerprint.c \
+    fingerprint_tz.c \
+    QSEEComAPI.c \
+    hash.c
+
+LOCAL_C_INCLUDES += \
+    external/sqlite/dist
+
+LOCAL_SHARED_LIBRARIES := \
+        liblog \
+        libsqlite
+
 LOCAL_MODULE_TAGS := optional
 
 include $(BUILD_SHARED_LIBRARY)

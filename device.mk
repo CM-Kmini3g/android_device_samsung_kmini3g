@@ -72,6 +72,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     FlipFlap
 
+# Fingerprint
+  PRODUCT_PACKAGES += \
+      fingerprintd \
+      fingerprint.msm8226
+
 # For userdebug builds
 ADDITIONAL_DEFAULT_PROPERTIES += \
  ro.secure=0 \
