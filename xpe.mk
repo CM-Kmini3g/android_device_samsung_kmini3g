@@ -13,12 +13,12 @@
 # limitations under the License.
 
 # Inherit some common XPe stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+$(call inherit-product, vendor/XPe/config/common_full_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/samsung/kmini3g/full_kmini3g.mk)
 
 # Release name
 PRODUCT_RELEASE_NAME := SM-G800H
-PRODUCT_NAME := lineage_kmini3g
+PRODUCT_NAME := xpe_kmini3g
 
